@@ -1,9 +1,9 @@
 import { StatusCodes } from 'http-status-codes';
 import request from 'supertest';
 
-import { User } from '@/api/user/userModel';
-import { users } from '@/api/user/userRepository';
 import { ServiceResponse } from '@/common/models/serviceResponse';
+import { User } from '@/models/user/user.models';
+import { users } from '@/repositories/user/user.repository';
 import { app } from '@/server';
 
 describe('User API Endpoints', () => {

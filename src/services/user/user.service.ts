@@ -1,8 +1,8 @@
 import { StatusCodes } from 'http-status-codes';
 
-import { User } from '@/api/user/userModel';
-import { userRepository } from '@/api/user/userRepository';
 import { ResponseStatus, ServiceResponse } from '@/common/models/serviceResponse';
+import { User } from '@/models/user/user.models';
+import { userRepository } from '@/repositories/user/user.repository';
 import { logger } from '@/server';
 
 export const userService = {
