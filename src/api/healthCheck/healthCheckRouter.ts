@@ -5,7 +5,7 @@ import { z } from 'zod';
 
 import { createApiResponse } from '@/api-docs/openAPIResponseBuilders';
 import { ResponseStatus, ServiceResponse } from '@/common/models/serviceResponse';
-import { handleServiceResponse } from '@/common/utils/httpHandlers';
+import { handleServiceResponse } from '@/utils/httpHandlers';
 
 export const healthCheckRegistry = new OpenAPIRegistry();
 
