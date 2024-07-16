@@ -10,6 +10,7 @@ import errorHandler from '@/middleware/errorHandler';
 import rateLimiter from '@/middleware/rateLimiter';
 import requestLogger from '@/middleware/requestLogger';
 
+import { walletRouter } from './api/wallet/wallet.router';
 import { env } from './utils/envConfig';
 
 const logger = pino({ name: 'server start' });
@@ -29,6 +30,7 @@ app.use(requestLogger);
 // Routes
 app.use('/health-check', healthCheckRouter);
 app.use('/users', userRouter);
+app.use('/wallets', walletRouter);
 
 // Swagger UI
 app.use(openAPIRouter);
